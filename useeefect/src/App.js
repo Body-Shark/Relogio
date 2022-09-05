@@ -2,15 +2,15 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 
 function App() {
-  let [count, setCount] = useState(0);
-  count = new Date()
+  const [count, setCount] = useState(new Date());
+
 
   useEffect(() => {
     document.title = `Clock ${count.toLocaleTimeString()}`
   },[count]);
 
   setInterval(() => {
-    setCount(count = new Date())
+    setCount(new Date())
   },1000)
    
   return (
