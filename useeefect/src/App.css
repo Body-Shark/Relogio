@@ -1,6 +1,12 @@
+html {
+  background-color: rgb(29, 29, 29);
+}
+
+
 .clock {
   display: grid;
   align-items: center;
   justify-content: center;
   font-size: 150px;
+  color: rgb(177, 177, 177);
 }
